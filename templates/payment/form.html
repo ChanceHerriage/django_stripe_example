@@ -1,0 +1,5 @@
+<form action="." method="POST"> <!-- . is the current page -->
+	{% csrf_token %} <!-- security -->
+	{{ form.as_p }} <!-- displays the form -->
+	<button type="submit">💰 Charge Me</button> <!-- submits the form -->
+</form>
